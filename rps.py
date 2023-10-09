@@ -10,16 +10,17 @@ def play(uinput:int,cinput:int):
         c2input='scissors'
     print(c2input)
     if c2input==1 and cinput==2:
-        print('Computer wins!')
+        result=('Computer wins!')
     if uinput==2 and cinput==3:
-        print('Computer wins!')
+        result=('Computer wins!')
     if uinput==3 and cinput==1:
-        print('Computer wins!')
+        result=('Computer wins!')
     if cinput==1 and uinput==2:
-        print('User wins!')
+        result=('User wins!')
     if cinput==2 and uinput==3:
-        print('User wins!')
+        result=('User wins!')
     if cinput==3 and uinput==1:
-        print('User wins!')
+        result=('User wins!')
     if uinput==cinput:
-        print('Tie!')
+        result=('Tie!')
+    return [uinput,cinput,result]

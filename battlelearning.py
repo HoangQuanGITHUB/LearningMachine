@@ -2,9 +2,9 @@ import rps, json
 from random import randint
 print("You can't win a battle against me >:)")
 
-klf=open('moves.json','r')
+klf=open('battles.json','r')
 movesf=klf.read()
-move=json.loads(movesf)['moves']
+move=json.loads(movesf)['log']
 
 while True:
     uinput=input()
