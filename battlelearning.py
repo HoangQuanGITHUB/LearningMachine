@@ -7,7 +7,7 @@ movesf=klf.read()
 move=json.loads(movesf)['moves']
 
 while True:
-    uinput=input('')
+    uinput=int(input())
     if uinput=='rock':
         uinput=1
     if uinput=='paper':
