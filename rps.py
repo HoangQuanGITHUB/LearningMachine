@@ -2,7 +2,15 @@ def play(uinput:int,cinput:int):
     #1=rock
     #2=paper
     #3=scissors
-    if uinput==1 and cinput==2:
+    c2input=cinput
+    if c2input==1:
+        uinput='rock'
+    if c2input==2:
+        uinput='paper'
+    if c2input==3:
+        uinput='scissors'
+    print(c2input)
+    if c2input==1 and cinput==2:
         print('Computer wins!')
     if uinput==2 and cinput==3:
         print('Computer wins!')
